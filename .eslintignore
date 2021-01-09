@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+/bld
+/.idea
+# testing
+/coverage
+
+# 插件目录
+/plugins
+# 模板目录
+/template
+# 源码
+/dist
+
+# 缓存的token
+config.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

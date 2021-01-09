@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+.github
+.gitignore
+.npmignore
+.babelrc
+*.log
+
+
+node_modules
+.prettierrc
+rollup.config.json
+package-lock.json
+*.lock
