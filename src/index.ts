@@ -70,7 +70,7 @@ function checkIsConflict(module: VueTemplateModule) {
 class CheckVueConflictPlugin {
   private readonly options: CheckVueConflictPluginOptions;
 
-  constructor(options: CheckVueConflictPluginOptions) {
+  constructor(options?: CheckVueConflictPluginOptions) {
     this.options = options || {};
   }
 
