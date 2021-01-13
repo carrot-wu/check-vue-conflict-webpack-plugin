@@ -1,4 +1,3 @@
-import { URL } from 'url';
 import { Compiler, Module } from 'webpack';
 import { parse } from '@babel/parser';
 import traverse from '@babel/traverse';
@@ -20,9 +19,10 @@ interface CheckVueConflictPluginOptions {
 const newVueToken = ['_vm'];
 const vuePropertyKey = ['_v'];
 
-function isVueTemplate(url: string) {
-  const vueUrl = new URL(url);
-  if (vueUrl.searchParams.get('type') === 'template') {
+// 判断是否vue模板 注意的是 mac的路径为相对路径 所以不能实例化的URL方法形式
+// 改用正则
+function isVueTemplate (url: string) {
+  if (/\.vue\?vue&type=template/.test(url)) {
     return true;
   }
 }
