@@ -2,7 +2,7 @@
 [![NPM Version][npm-image]][npm-url]
 
 一个能够检测.vue单文件template模板中是否存在遗留的合并冲突代码的webpack插件
-
+> 支持
 ## 安装
 
 ```

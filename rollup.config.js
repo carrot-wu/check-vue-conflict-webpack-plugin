@@ -44,5 +44,5 @@ export default {
     terser(),
     json(),
   ],
-  external: ['@babel/parser', '@babel/traverse', '@babel/types', 'url'],
+  external: ['@babel/parser', '@babel/traverse', '@babel/types', 'vue'],
 };

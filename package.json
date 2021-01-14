@@ -1,6 +1,6 @@
 {
   "name": "@carrotwu/check-vue-conflict-webpack-plugin",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "用于检测vue单文件template模板中是否存在未处理的合并冲突遗留代码的webpack插件",
   "main": "dist/index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "lint": "eslint src --ext .ts --fix",
     "publish:next": "npm publish --access public"
   },
+  "keywords": ["vue", "webpack", "conflict"],
   "publishConfig": {
     "access": "public"
   },
@@ -51,5 +52,8 @@
     "@babel/parser": "^7.12.11",
     "@babel/traverse": "^7.12.11",
     "@babel/types": "^7.12.11"
+  },
+  "peerDependencies": {
+    "vue": ">=2.x"
   }
 }
